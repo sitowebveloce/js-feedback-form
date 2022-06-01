@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./love.png">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="container flex">
+        <h1 class="title"> <img src="./positive-vote.png" alt="vote"> Feedback Form</h1>
+        <p class="subtitle">Did you like our service?</p>
+            <form class="rating" autocomplete="off">
+                <div class="input-group-rating">
+                    <label for="num1">1</label>
+                    <input type="radio" id="num1" name="rating" value="1" />
+                    <label for="num2">2</label>
+                    <input type="radio" id="num2" name="rating" value="2" />
+                    <label for="num3">3</label>
+                    <input type="radio" id="num3" name="rating" value="3" />
+                    <label for="num4">4</label>
+                    <input type="radio" id="num4" name="rating" value="4" />
+                    <label for="num5">5</label>
+                    <input type="radio" id="num5" name="rating" value="5" />
+                </div>
+            </form>
+        <form class="add flex" autocomplete="off">
+            <div class="input-group-review">
+                <input type="text" name="review" class="review" placeholder="Review" >
+                <button class="btn-submit" type="submit">Submit</button>
+            </div>
+            <!-- Review at least 10 characters. -->
+            <div class="message"></div>
+        </form>
+
+            <div class="average"></div>
+        
+            <ul class="feedback-ul">
+                <!-- <li>
+                    <div class="value">5</div>
+                    <div class="delete">X</div>
+                    <div class="text">Great product thanks!</div>
+                </li> -->
+                
+            </ul>
+       
+    </div>
+</body>
+</html>
